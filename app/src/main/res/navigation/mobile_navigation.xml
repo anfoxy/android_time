@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.timelab.ui.fragment.HomeFragment"
+        android:label="Время"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_alarms"
+        android:name="com.example.timelab.ui.fragment.AlarmsFragment"
+        android:label="Будильник"
+        tools:layout="@layout/fragment_alarms" />
+
+    <fragment
+        android:id="@+id/navigation_sec"
+        android:name="com.example.timelab.ui.fragment.SecFragment"
+        android:label="Секундомер"
+        tools:layout="@layout/fragment_sec" />
+
+    <fragment
+        android:id="@+id/navigation_timer"
+        android:name="com.example.timelab.ui.fragment.TimerFragment"
+        android:label="Таймер"
+        tools:layout="@layout/activity_timer" />
+</navigation>

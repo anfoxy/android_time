@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_alarms"
+        android:icon="@drawable/ic_baseline_access_alarms_24"
+        android:title="Будильник" />
+
+    <item
+        android:id="@+id/navigation_sec"
+        android:icon="@drawable/ic_baseline_timer_24"
+        android:title="Секундомер" />
+    <item
+        android:id="@+id/navigation_timer"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Таймер" />
+
+</menu>

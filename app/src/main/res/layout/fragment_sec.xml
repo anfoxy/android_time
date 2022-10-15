@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:inputType="none"
+        android:id="@+id/L4TimeText"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/L4Bttn"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:text="начать/остановить" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="Обновить" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/L4FixBttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="зафиксировать" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="574dp"
+        android:layout_marginBottom="1dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+</LinearLayout>
